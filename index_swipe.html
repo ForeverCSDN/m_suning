@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>苏宁移动站</title>
+    <link rel="stylesheet" href="libs/font-awesome-4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="libs/animate/animate.min.css"/>
+    <link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
+    <link rel="stylesheet" href="less/index.css"/>
+    <style>
+        .swiper-container{
+            margin-top:0.9rem;
+        }
+        .swiper-container img{
+            display:block;
+            width: 100%;
+        }
+        .swiper-pagination{
+            text-align: right;
+            padding-right: 40px;
+        }
+        .swiper-pagination-bullet{
+            background: #fff;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active{
+            background: #fabc09;
+        }
+    </style>
+</head>
+<body>
+<div class="sn_layout">
+    <!--搜索栏-->
+    <header class="sn_header">
+        <a href="#" class="icon_menu"></a>
+        <form action="">
+            <span class="icon_search"></span>
+            <input type="search" placeholder="60寸互联网电视"/>
+        </form>
+        <a href="#" class="icon_cart"></a>
+    </header>
+    <!--轮播图-->
+    <div class="swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="#"><img src="images/banner01.jpg" alt=""/></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner02.jpg" alt=""/></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner03.jpg" alt=""/></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner04.jpg" alt=""/></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner05.jpg" alt=""/></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner06.jpg" alt=""/></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner07.jpg" alt=""/></a></li>
+            <li class="swiper-slide"><a href="#"><img src="images/banner08.jpg" alt=""/></a></li>
+        </ul>
+        <ul class="swiper-pagination">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--导航-->
+    <nav class="sn_nav">
+        <ul class="clearfix">
+            <li><a href="#"><img src="images/nav01.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav02.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav03.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav04.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav05.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav01.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav02.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav03.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav04.png" alt=""/><p>分类</p></span></a></li>
+            <li><a href="#"><img src="images/nav05.png" alt=""/><p>分类</p></span></a></li>
+        </ul>
+    </nav>
+    <!--页签-->
+    <footer class="sn_tab">
+        <ul class="clearfix">
+            <li><a href="#"><span class="fa fa-home"></span><span>首页</span></a></li>
+            <li><a href="#"><span class="fa fa-reorder"></span><span>分类</span></a></li>
+            <li><a href="#"><span class="fa fa-file-text-o"></span><span>必抢清单</span></a></li>
+            <li><a href="#"><span class="fa fa-user"></span><span>我的易购</span></a></li>
+            <li><a href="#"><span class="fa fa-suitcase"></span><span>新人大礼包</span></a></li>
+        </ul>
+    </footer>
+</div>
+<!--5个核心模块的js-->
+<script src="libs/zepto/zepto.min.js"></script>
+<!--for扩展性选择器-->
+<script src="libs/zepto/selector.js"></script>
+<!--for方法-->
+<script src="libs/zepto/fx.js"></script>
+<!--for touch事件-->
+<script src="libs/zepto/touch.js"></script>
+
+<!--基于zepto的 swiper.jquery.min.js-->
+<script src="libs/swiper/js/swiper.jquery.min.js"></script>
+<script>
+    $(function () {
+       new Swiper('.swiper-container',{
+           pagination: '.swiper-pagination',
+           loop:true,
+           autoplay:1000,
+           autoplayDisableOnInteraction:false
+       });
+    });
+</script>
+</body>
+</html>
